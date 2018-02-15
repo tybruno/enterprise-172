@@ -1,0 +1,14 @@
+ec2:
+  region: us-west-1
+  credentials: Admin_Key-pair
+  image: ami-07585467
+  sg: AllowSSH
+  instance_type: t2.micro
+  subnet: subnet-d52fa38e
+  public_ip: yes
+  tags:
+    Name: Ec2Ansible
+  volumes:
+    - device_name: /dev/sda1 
+      volume_type: standard
+      volume_size: 8

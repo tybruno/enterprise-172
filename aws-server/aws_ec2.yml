@@ -1,0 +1,5 @@
+ - hosts: remote
+   connection: direct
+   roles:
+     - ec2
+   tags: ec2_create
